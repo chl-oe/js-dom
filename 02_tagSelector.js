@@ -7,7 +7,9 @@ function tagSelector(){
   return document.querySelector("button");
 }
 
-console.log(tagSelector()); // element>button
-console.log(tagSelector().innerHTML); //"hello"
+//console.log(tagSelector()); // element>button
+//console.log(tagSelector().innerHTML); //"hello"
+  //il faut mettre en commentaire les console.log lorsqu'un module.exports est demandé sinon
+  //les tests ne passent pas
 
 module.exports = tagSelector;
