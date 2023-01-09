@@ -4,7 +4,8 @@
 // ⚠ un module.export est attendu
 
 function tagSelector(){
-  return document.querySelector("button");
+  return document.getElmeentsByTagName("button")[0];
+  // ou bien return document.querySelector("button");
 }
 
 //console.log(tagSelector()); // element>button

@@ -4,5 +4,6 @@
 
 document.getElementsByTagName("button")[0].innerHTML = "hello world";
 
+
 /* possibilité de l'écrire aussi avec querySelector() =>
 document.querySelector("button").innerHTML = "hello world" */
