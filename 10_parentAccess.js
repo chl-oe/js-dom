@@ -2,10 +2,8 @@
 retournez son parent
 ⚠ un module.export est attendu */
 
-function parentAccess(){
-  let node = document.getElementsByTagName("")[0];
-  return node.parentNode;
+function parentAccess(node){
+  return node.parentElement;
 }
 
-console.log(parentAccess());
 module.exports = parentAccess;
