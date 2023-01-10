@@ -3,7 +3,7 @@ son contenu lors de l’execution de votre fonction.
 ⚠ un module.export est attendu */
 
 function idSelector(){
-  return document.getElementById("input");
+  return document.getElementById("input").value;
 }
 
 console.log(idSelector());
