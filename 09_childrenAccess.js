@@ -4,7 +4,7 @@ Renvoyer son contenu
 
 function childrenAccess(){
   let content = document.getElementById('menu');
-  return content.firstElementChild;
+  return content.firstElementChild.innerHTML;
 }
 
 console.log(childrenAccess());
