@@ -9,6 +9,12 @@ ordre de priorité (si plusieurs classes)
 ex: .btn.secondary.danger → “red”
 ⚠ ce script est a exécution directe, il ne nécessite pas de module.export ni de déclaration de fonction */
 
-let element = document.getElementsByClassName("btn");
+/* let element = document.getElementsByClassName("btn");
 element = [...element];
-element.map(e => e.style.backgroundColor = "red");
+element.map(e => e.style.backgroundColor = "blue"); */
+
+document.querySelector(".btn").style.backgroundColor = "blue";
+document.querySelector(".btn.danger").style.backgroundColor = "red";
+document.querySelector(".btn.warning").style.backgroundColor = "yellow";
+document.querySelector(".btn.secondary").style.backgroundColor = "grey";
+
