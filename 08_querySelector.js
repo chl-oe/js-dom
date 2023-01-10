@@ -9,10 +9,18 @@ ordre de priorité (si plusieurs classes)
 ex: .btn.secondary.danger → “red”
 ⚠ ce script est a exécution directe, il ne nécessite pas de module.export ni de déclaration de fonction */
 
-document.querySelector(".btn").style.backgroundColor = "blue";
-document.querySelector(".btn.danger").style.backgroundColor = "red";
-document.querySelector(".btn.secondary").style.backgroundColor = "grey";
-document.querySelector(".btn.warning").style.backgroundColor = "yellow";
-document.querySelector(".btn.secondary.danger").style.backgroundColor = "red";
-document.querySelector(".btn.secondary.warning").style.backgroundColor = "yellow";
-document.querySelector(".btn.danger.warning").style.backgroundColor = "red";
+let btn1 = document.querySelectorAll(".btn");
+btn1 = [...btn1];
+btn1.map(e => e.style.backgroundColor = "blue");
+
+let btn2 = document.querySelectorAll(".secondary");
+btn2 = [...btn2];
+btn2.map(e => e.style.backgroundColor = "grey");
+
+let btn3 = document.querySelectorAll(".warning");
+btn3 = [...btn3];
+btn3.map(e => e.style.backgroundColor = "yellow");
+
+let btn4 = document.querySelectorAll(".danger");
+btn4 = [...btn4];
+btn4.map(e => e.style.backgroundColor = "red");
