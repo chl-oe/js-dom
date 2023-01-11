@@ -2,7 +2,7 @@
 l’élément préexistant dans le dom div#content
 ⚠ ce script est a exécution directe, il ne nécessite pas de module.export ni de déclaration de fonction */
 
-let container = document.getElementById('div#content');
+let container = document.getElementById("content");
 let injection = document.createElement("p");
-injection.innerHTML = "hello world";
+injection.textContent = "hello world";
 container.appendChild(injection);
