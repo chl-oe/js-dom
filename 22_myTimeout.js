@@ -3,7 +3,7 @@
 
 let myButton = document.querySelector("button");
 myButton.addEventListener("click", function() {
-  setTimeout(() => {g
+  setTimeout(() => {
     let injection = document.createElement("p");
     injection.innerHTML = "Hello";
     document.body.appendChild(injection);
