@@ -3,10 +3,11 @@ si “is-open” est présent lors du click, enlève “is-open” de la class d
 si “is-open” est absent lors du click, ajoute “is-open” a la classe modal */
 
 let myButton = document.getElementById("toggle");
+let container = document.getElementById("modal");
+
 myButton.addEventListener("click", function() {
-  let container = document.getElementById("modal");
   container.classList.toggle("is-open");
-console.log(container);
+  console.log(container);
 });
 
 
