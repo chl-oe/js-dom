@@ -12,15 +12,19 @@ ex: .btn.secondary.danger → “red”
 let btn1 = document.querySelectorAll(".btn");
 btn1 = [...btn1];
 btn1.map(e => e.style.backgroundColor = "blue");
+// ou btn1.forEach(e => e.style.backgroundColor = "blue");
 
 let btn2 = document.querySelectorAll(".secondary");
 btn2 = [...btn2];
 btn2.map(e => e.style.backgroundColor = "grey");
+// ou btn2.forEach(e => e.style.backgroundColor = "grey");
 
 let btn3 = document.querySelectorAll(".warning");
 btn3 = [...btn3];
 btn3.map(e => e.style.backgroundColor = "yellow");
+// ou btn3.forEach(e => e.style.backgroundColor = "yellow");
 
 let btn4 = document.querySelectorAll(".danger");
 btn4 = [...btn4];
 btn4.map(e => e.style.backgroundColor = "red");
+// ou btn4.forEach(e => e.style.backgroundColor = "red");
